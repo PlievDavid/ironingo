@@ -185,10 +185,79 @@ header{
     color: white;
     text-decoration: none;
 }
+.authorisation{
+    margin-top:70px;
+    background-image: url("images/mountain-bg.png");
+    height:800px;
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size:16px;
+    color:white;
+}
+.authorisation img{
+    position: relative;
+    bottom:150px;
+    left:-250px;
+}
+.authorisation form{
+    width:300px;
+    background-color:#FFFFDB;
+    padding:33px 81px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    color:black;
+}
+.authorisation form button{
+    margin-top:10px;
+    background-color:#000000;
+    color: #ffffff;
+    border:none;
+    border-radius: 5px;
+    padding:10px;
+}
+.registration{
+    margin-top:70px;
+    position: relative;
+    background-image: url("images/mountain-bg.png");
+    height:900px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size:16px;
+    color:white;
+}
+.registration img{
+    position: relative;
+    bottom:150px;
+    right:-250px;
+}
+.registration form{
+    width:300px;
+    background-color:#FFFFDB;
+    padding:33px 81px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    color:black;
+}
+.registration form button{
+    margin-top:10px;
+    background-color:#000000;
+    color: #ffffff;
+    border:none;
+    border-radius: 5px;
+    padding:10px;
+}
 footer{
     background-image: url("images/footer-bg.png");
     height:264px;
-    margin-bottom:104px;
     color: white;
     display: flex;
     flex-direction: column;

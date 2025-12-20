@@ -1,0 +1,197 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display:flex;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    background-color: #FFF4D4;
+    flex-direction: row;
+    justify-content: space-between;
+    height:104px;
+    align-items: center;
+    box-shadow: 4px 0 4px 1px rgb(78, 78, 78);
+    overflow: hidden;
+    z-index: 1;
+}
+.ellipse{
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+}
+.red{
+    background-color: #FF7462;
+    right:-300px;
+    width:690px;
+    height:110px;
+}
+.white{
+    background-color: #ffffff;
+    right:-170px;
+    top:-70px;
+    width:540px;
+    height:105px;
+}
+.yellow{
+    background-color: #FAFF62;
+    right:-170px;
+    bottom:-70px;
+    width:540px;
+    height:105px;
+}
+.icon-and-title{
+    display: flex;
+    align-items:center;
+    font-size: 30px;
+    gap:50px;
+    margin-left:40px;
+    font-weight: 400;
+}
+.navigation{
+    margin-right:30px;
+}
+.navigation nav{
+    display: flex;
+    gap:30px;
+}
+.navigation a{
+    text-decoration: none;
+    color:white;
+    font-weight: 400;
+    font-size: 16px;
+}
+.about{
+    background-image: url("images/mountain-bg.png");
+    height:750px;
+    background-size:contain;
+    display: flex;
+    align-items: center;
+    z-index:-2;
+}
+.about-block{
+    width:1300px;
+    margin: auto;
+    display: flex;
+    gap:40px;
+    align-items: center;
+}
+.info{
+    background-color: #FFF7E9;
+    border-radius:40px;
+    padding:25px 35px;
+    width:800px;
+    height:225px;
+    box-shadow: 0 4px 4px 1px rgb(202, 202, 202);
+    font-size: 24px;
+}
+.courses{
+    height:935px;
+    width:150vw;
+    background-color: #fcffcb;
+    border-radius: 50%;
+    position:relative;
+    top:-138px;
+    left:-27.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+.courses-block{
+    display: flex;
+    height:100px;
+    flex-direction: column;
+    justify-content: center;
+    gap:40px;
+    align-items: center;
+}
+.courses-list{
+    display: flex;
+    gap:60px;
+}
+.course{
+    width:405px;
+    font-size: 24px;
+}
+.course p{
+    color:#828282
+}
+.advantages{
+    height:800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    position:relative;
+    top:-90px;
+}
+.promo-cards{
+    display: flex;
+    gap:40px;
+}
+.promo-card{
+    display: flex;
+    flex-direction: column;
+    width:405px;
+    height:405px;
+    border-radius:15px;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    color: white;
+    font-size: 36px;
+}
+.promo-card strong{
+    width:370px;
+    text-align: center;
+}
+.green-grad{
+   background:linear-gradient(#EDFFE4,#8DFF6B);
+}
+.yellow-grad{
+   background:linear-gradient(#FDFFE8,#EAD641);
+}
+.blue-grad{
+    background:linear-gradient(#DDEEFF,#8CC7FF);
+    gap:55px;
+}
+.add{
+    height:104px;
+    width:100vw;
+    background-color: #FFF4D4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    bottom:0;
+    left:0;
+    box-shadow: 0 -1px 4px 1px rgb(121, 121, 121);
+}
+.icon-and-register{
+    display:flex;
+    align-items: center;
+    margin-right:50px;
+}
+.icon-and-register nav{
+    background-color: black;
+    padding:10px;
+    border-radius: 7px;
+}
+.icon-and-register nav a{
+    color: white;
+    text-decoration: none;
+}
+footer{
+    background-image: url("images/footer-bg.png");
+    height:264px;
+    margin-bottom:104px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0 30px;
+}

@@ -255,6 +255,101 @@ header{
     border-radius: 5px;
     padding:10px;
 }
+.course-container{
+    height:700px;
+    margin-top:104px;
+    padding:20px;
+    display: flex;
+    justify-content: center;
+}
+.course-grid{
+    display: grid;
+    grid-template-columns: 300px 900px;
+    gap:5px;
+}
+.course-info{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 249, 222);
+    padding:10px;
+    height:200px;
+    border-radius: 10px;
+    gap:15px;
+    box-shadow:  0 2px 0 1px gray;
+    margin-top:15px;
+}
+.course-info a{
+    text-decoration: none;
+    background-color: #000000;
+    color: white;
+    padding:5px;
+    border-radius: 5px;
+    width:95px;
+}
+.course-progress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.task-label-list{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.task-label{
+    border:1px solid gray;
+    padding:10px;
+    margin-left:30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.task-label a{
+    text-decoration: none;
+    color: black;
+    font-size:16px;
+}
+.task-container{
+    margin-top:104px;
+    display: flex;
+    justify-content: center;
+}
+.task-grid{
+    display: grid;
+    grid-template-columns: 15vw 85vw;
+}
+.task-list{
+    display:flex;
+    flex-direction: column;
+    background-color: #454C72;
+    color:white;
+    padding:20px;
+    gap:5px;
+}
+.task-group{
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+}
+.task-group a{
+    text-decoration: none;
+    color:white;
+    margin-left:20px;
+}
+.task{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:70vw;
+    margin:0 auto;
+    font-size: 20px;
+ }  
+ .comment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+ }
 footer{
     background-image: url("images/footer-bg.png");
     height:264px;

@@ -115,6 +115,13 @@ header{
 .course{
     width:405px;
     font-size: 24px;
+    cursor: pointer;
+    padding:10px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.course:hover{
+    background-color: #fff5bc;
 }
 .course p{
     color:#828282

@@ -14,9 +14,9 @@
         </span>
         <span class = "navigation">
             <nav>
-                <a href = "">Главная</a>
-                <a href = "">Регистрация</a>
-                <a href = "">Авторизация</a>
+                <a href = "index.html">Главная</a>
+                <a href = "registration.html">Регистрация</a>
+                <a href = "authorisation.html">Авторизация</a>
             </nav>
         </span>
         <span class = "ellipse red"></span>
@@ -25,39 +25,35 @@
     </header>
     <section class = "task-container">
         <div class = task-grid>
-            <div class = "task-list">
-                <strong>“Ирон сывӕллон”</strong>
-                <p style = "margin:0;"><strong>0/10</strong> баллов получено</p>
-                <hr style = "width:13vw">
-                <strong>Введение</strong>
-                <hr style = "width:13vw">
-                <div class = "task-group">
-                    <a href>История осетинского языка</a>
-                    <a href>Буквы осетинского языка</a>
-                    <a href>Уникальные звуки осетинского языка</a>
-                    <a href>Словообразование</a>
-                </div>
-                <hr style = "width:13vw">
+            <div class = "task-list" id = "refs">
+                
             </div>
-            <div class = "task">
-                <h1>История осетинского языка</h1>
-                <p>Предшественником современного осетинского языка является аланский язык — язык племени аланов, с начала I века н.э. расселившихся в Предкавказье, Приазовье, Крыму и бассейне Дона. Предками аланов, в свою очередь, являются ираноязычные скифо-сарматские племена. 
-</p>
-                <p>Существует теория двуприродного происхождения осетинского языка: иранский по происхождению, язык осетин подвергся значительному кавказскому влиянию. Доказательством тому служит наличие в осетинском языке кавказского субстрата. 
-p</p>
-                <p>Современный осетинский язык сложился в результате внесения языка аланов, ушедших от нашествий монголо-татар и Тамерлана с предгорий Северного Кавказа в горы Центрального Кавказа, в среду проживавшего в этом районе аборигенного населения (говорившего, предположительно, на одном или нескольких кавказских языках).</p>
-                <p>Первые письменные памятники современного осетинского языка датируются концом XVIII века. Первые варианты письменности возникли из-за необходимости обучения в церковных школах.</p>
-                <a href style = "margin-left:55vw;text-decoration: none;color: white;background-color: black;border-radius: 5px;padding:5px;">Следующий шаг</a>
+
+            <div>
+                <div class = "task" id = "data">
+                    <h1>История осетинского языка</h1>
+                    <p>Предшественником современного осетинского языка является аланский язык — язык племени аланов, с начала I века н.э. расселившихся в Предкавказье, Приазовье, Крыму и бассейне Дона. Предками аланов, в свою очередь, являются ираноязычные скифо-сарматские племена. 
+                </p>
+                    <p>Существует теория двуприродного происхождения осетинского языка: иранский по происхождению, язык осетин подвергся значительному кавказскому влиянию. Доказательством тому служит наличие в осетинском языке кавказского субстрата. 
+                p</p>
+                    <p>Современный осетинский язык сложился в результате внесения языка аланов, ушедших от нашествий монголо-татар и Тамерлана с предгорий Северного Кавказа в горы Центрального Кавказа, в среду проживавшего в этом районе аборигенного населения (говорившего, предположительно, на одном или нескольких кавказских языках).</p>
+                    <p>Первые письменные памятники современного осетинского языка датируются концом XVIII века. Первые варианты письменности возникли из-за необходимости обучения в церковных школах.</p>
+                    <a href style = "margin-left:55vw;text-decoration: none;color: white;background-color: black;border-radius: 5px;padding:5px;">Следующий шаг</a>
+
+                </div>
                 <hr style = "border:1px solid black; width:65vw">
-                <h1>Комментарии</h1>
-                <hr style = "border:1px solid black; width:65vw">
-                <h2>Оставить комментарий</h2>
-                <form class = "comment">
-                    <input type = 'text' style = "width: 30vw;height:30px;">
-                    <button type = "submit" style = "color: white;background-color: black;border-radius: 5px;padding:5px;">Оставить</button>
-                </form>
-               <hr style = "border:1px solid black; width:65vw">
-               <h2>Пока нет комментариев</h2>
+                <div style = "display:flex;flex-direction:column;align-items:center;">
+                    <h1>Комментарии</h1>
+                    <hr style = "border:1px solid black; width:65vw">
+                    <h2>Оставить комментарий</h2>
+                    <form class = "comment">
+                        <input type = 'text' style = "width: 30vw;height:30px;">
+                        <button type = "submit" style = "color: white;background-color: black;border-radius: 5px;padding:5px;">Оставить</button>
+                    </form>
+                                        <hr style = "border:1px solid black; width:65vw">
+                                        <h2>Пока нет комментариев</h2>
+                </div>
+
             </div>
         </div>
     </section>
@@ -67,5 +63,6 @@ p</p>
         <p>Телефон: 8 800 555 35 35</p>
         <p>Почта: ironingo@gmail.com</p>
     </footer>
+    <script src = "js/course-task-script.js"></script>
 </body>
 </html>

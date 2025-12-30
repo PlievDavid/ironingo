@@ -43,3 +43,24 @@ p</p>
     <p>Первые письменные памятники современного осетинского языка датируются концом XVIII века. Первые варианты письменности возникли из-за необходимости обучения в церковных школах.</p>
     <a href = "course-task.html?taskId=${taskId+1}&courseId=${courseId}" style = "margin-left:55vw;text-decoration: none;color: white;background-color: black;border-radius: 5px;padding:5px;">Следующий шаг</a>
 `;
+
+const userProfile = document.getElementById('userProfile');
+const regLink = document.querySelector('a[href="registration.html"]');
+const authLink = document.querySelector('a[href="authorisation.html"]');
+function checkUserSignedIn() {
+    for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        const user = JSON.parse(localStorage.getItem(key));
+        
+        if (user && user.isSignedIn === true) {
+            
+            userProfile.textContent = user.username;
+            userProfile.hidden = false;
+            regLink.hidden = true;
+            authLink.hidden = true;
+            break;
+        }
+    }
+}
+
+checkUserSignedIn();

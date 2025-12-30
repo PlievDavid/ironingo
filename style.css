@@ -254,14 +254,40 @@ header{
     gap:10px;
     color:black;
 }
-.registration form button{
+
+.registration form input, .authorisation form input{
+    border: none;
+    border-bottom: 2px solid #19487E;
+    background-color: transparent;
+    font-size: 100%;
+    outline: none;
+    border-radius: 8px;
+    padding: 10px 6px;
+    transition: background 240ms ease, box-shadow 240ms ease, border-color 240ms ease;
+}
+.registration form input:focus, .authorisation form input:focus{
+    background-color: rgba(234, 201, 60, 0.12);
+    border-bottom-color: #EAD641;
+    box-shadow: 0 10px 30px rgba(25,72,126,0.06);
+}
+.registration form button, .authorisation form button{
     margin-top:10px;
-    background-color:#000000;
+    background: linear-gradient(90deg,#111,#000);
     color: #ffffff;
     border:none;
-    border-radius: 5px;
-    padding:10px;
+    border-radius: 10px;
+    padding:10px 14px;
+    cursor:pointer;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+    transition: transform 240ms ease, box-shadow 240ms ease;
 }
+.registration form button:hover, .authorisation form button:hover{ 
+    transform: translateY(-3px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.14); 
+    transform: translateY(-3px) scale(1.10);
+    }
+
+
 .course-container{
     height:700px;
     margin-top:104px;

@@ -17,6 +17,7 @@
                 <a href = "index.html">Главная</a>
                 <a href = "registration.html">Регистрация</a>
                 <a href = "authorisation.html">Авторизация</a>
+                <a href="#" hidden id="userProfile"></a>
             </nav>
         </span>
         <span class = "ellipse red"></span>
@@ -26,17 +27,22 @@
     <section class = "registration">
         <h1>Регистрация</h1>
         <form class = "registration-form">
+
             <label for="name">ФИО</label>
-            <input type = "text" id = "name" placeholder="example@gmail.com">
+            <input type = "text" id = "name" placeholder="Иванов Иван Иванович" required="true">
+
             <label for="age">Возраст</label>
-            <input type = "number" id = "age" min = 18>
+            <input type = "number" id = "age" min = 5>
+
             <label for="login">Логин(почта)</label>
             <input type = "email" id = "login" placeholder="example@gmail.com">
+
             <label for="password">Пароль</label>
-            <input type = "text" id = "password">
-             <label for="confirmPassword">Подтверждение пароля</label>
-            <input type = "text" id = "confirmPassword">
-            <button type = "submit">Авторизоваться</button>
+            <input type="password" id="password" required>
+
+            <label for="confirmPassword">Подтверждение пароля</label>
+            <input type="password" id="confirmPassword" required>
+            <button type="submit" id="submitButton">Зарегистрироваться</button>
         </form>
         <img src = "images/registration-icon.png" width = "300">
     </section>
@@ -48,5 +54,7 @@
         <p>Телефон: 8 800 555 35 35</p>
         <p>Почта: ironingo@gmail.com</p>
     </footer>
+
+    <script src="js/registration-script.js"></script>
 </body>
 </html>

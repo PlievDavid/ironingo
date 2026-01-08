@@ -1,6 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('Инициализация комментариев...');
-    
+let numberOfComment = 0;
+document.addEventListener('DOMContentLoaded', function() {    
     const submitButton = document.getElementById('addCommentLink');
     const commentInput = document.getElementById('commentText');
     const commentsList = document.querySelector('.commentsList');
@@ -21,14 +20,21 @@ document.addEventListener('DOMContentLoaded', function() {
         const commentDiv = document.createElement('div');
         commentDiv.className = 'comment';
         commentDiv.style.display = "flex";
+        commentDiv.style.border = "1px solid";
+        commentDiv.style.margin = "20px";
+        commentDiv.style.padding = "10px";
+        commentDiv.style.minWidth = "500px";
+        commentDiv.style.alignItems = "flex-start";
+        commentDiv.style.borderRadius = "12px";
+        numberOfComment += 1;
+        const title = document.createElement('h3');
+        title.textContent = 'Комментарий №' + numberOfComment;
         
-        const title = document.createElement('h1');
-        title.textContent = 'Новый комментарий';
-        
-        const message = document.createElement('h2');
+        const message = document.createElement('h4');
         message.textContent = text;
         
         const time = document.createElement('small');
+        time.style.alignSelf = "end";
         time.textContent = new Date().toLocaleTimeString();
         
         commentDiv.appendChild(title);
@@ -42,7 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     submitButton.addEventListener('click', function(e) {
         e.preventDefault();
-        console.log('dsadsa');
         addComment();
     });
     

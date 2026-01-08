@@ -51,8 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
         addComment();
     });
     
-    submitButton.setAttribute('tabindex', '0');
-    submitButton.setAttribute('role', 'button');
     
     submitButton.addEventListener('keydown', function(e) {
         if (e.key === 'Enter' || e.key === ' ') {

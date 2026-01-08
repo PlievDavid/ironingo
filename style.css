@@ -392,3 +392,14 @@ footer{
     justify-content: center;
     padding:0 30px;
 }
+
+
+.submit-comment {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+}

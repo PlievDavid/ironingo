@@ -62,5 +62,4 @@ function checkUserSignedIn() {
         }
     }
 }
-
 checkUserSignedIn();

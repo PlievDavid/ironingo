@@ -43,16 +43,18 @@
 
                 </div>
                 <hr style = "border:1px solid black; width:65vw">
-                <div style = "display:flex;flex-direction:column;align-items:center;">
+                <div class="comments" style = "display:flex;flex-direction:column;align-items:center;">
                     <h1>Комментарии</h1>
                     <hr style = "border:1px solid black; width:65vw">
                     <h2>Оставить комментарий</h2>
-                    <form class = "comment">
-                        <input type = 'text' style = "width: 30vw;height:30px;">
-                        <button type = "submit" style = "color: white;background-color: black;border-radius: 5px;padding:5px;">Оставить</button>
-                    </form>
-                                        <hr style = "border:1px solid black; width:65vw">
-                                        <h2>Пока нет комментариев</h2>
+                    <div class="commentHeader">
+                        <input id="commentText" type="text" style="width: 30vw; height:30px;">
+                        <div id="addCommentLink" class="submit-comment">
+                            Оставить
+                        </div>
+                    </div>
+                    <div class="commentsList">
+                    </div>
                 </div>
 
             </div>
@@ -64,6 +66,7 @@
         <p>Телефон: 8 800 555 35 35</p>
         <p>Почта: ironingo@gmail.com</p>
     </footer>
-    <script src = "js/course-task-script.js"></script>
+    <script src="js/course-task-script.js" defer></script>
+    <script src="js/comments-script.js" defer></script>
 </body>
 </html>

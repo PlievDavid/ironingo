@@ -1,4 +1,5 @@
 body{
+    width: 100%;
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -412,8 +413,8 @@ footer{
     border-radius: 5px;
     border-left: 10px solid rgb(255, 219, 152);
 }
-@media(max-width:450px){
-    /* Header */
+
+@media(max-width:650px){
     .icon-and-title{
         font-size: 20px;
         margin:0;
@@ -443,7 +444,6 @@ footer{
         padding:5px;
         border-radius:3px ;
     }
-    /* Index */
     .info{
         font-size: 18px;
     }
@@ -452,11 +452,15 @@ footer{
     }
     .courses{
         height:170vh;
-        width:200vh;
-        left:-165vw;
+ 
+        width: 100%;
+        left: 0;
+        margin-top: 200px;
+        margin-bottom: 100px;
     }
     .course{
         font-size:17px;
+        
     }
     .course img{
         width:50vw;
@@ -481,7 +485,6 @@ footer{
     footer{
         margin-bottom: 0;
     }
-    /* Authorisation и Registration */
     .registration{
         height:80vh;
     }
@@ -494,7 +497,6 @@ footer{
     .authorisation img{
         display: none;
     }
-    /* course-main */
     .course-container{
         height:90vh;
     }
@@ -517,7 +519,6 @@ footer{
         width:60vw;
         margin-left:150px;
     }
-    /* course-task */
     .task-grid{
         grid-template-columns: 80vw;
     }
@@ -526,3 +527,5 @@ footer{
     }
 
 }
+
+

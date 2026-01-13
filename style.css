@@ -529,3 +529,26 @@ footer{
 }
 
 
+@media (min-width: 650px) and (max-width: 1024px) {
+    .courses{
+        display: none;
+    }
+    .advantages
+    {
+        display: none;
+    }
+    .about {
+        padding-bottom: 50%;
+    }
+
+    .info {
+     width: 70%;
+     font-size: 16px;
+    }
+    
+    .about-block img {
+        width: 50%;
+    }
+
+}
+

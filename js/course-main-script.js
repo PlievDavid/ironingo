@@ -18,10 +18,10 @@ else
 }
 infoDiv.innerHTML +=`
     <p style = "margin:0;"><strong>0/5</strong> баллов получено</p>
-    <a href = "course-task.html">Продолжить</a>
+    <a href = "course-task.html?taskId=1&courseId=${courseId}">Продолжить</a>
 `;
 taskRefs.innerHTML = `
-    <h2 style = "border:1px solid gray;padding:10px;width:600px;margin-bottom:7px;border-radius: 5px;border-left: 10px solid rgb(255, 219, 152);">Введение</h2>
+    <h2 class = "task-header">Введение</h2>
     <div class = "task-label">
         <a href = "course-task.html?taskId=1&courseId=${courseId}">История осетинского языка</a> 
         1

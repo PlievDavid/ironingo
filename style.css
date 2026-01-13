@@ -72,7 +72,7 @@ header{
     z-index:-2;
 }
 .about-block{
-    width:1300px;
+    width:70vw;
     margin: auto;
     display: flex;
     gap:40px;
@@ -113,7 +113,8 @@ header{
     gap:60px;
 }
 .course{
-    width:405px;
+    max-width:405px;
+    width:50vw;
     font-size: 24px;
     cursor: pointer;
     padding:10px;
@@ -210,7 +211,8 @@ header{
     left:-250px;
 }
 .authorisation form{
-    width:300px;
+    max-width:300px;
+    width:50vw;
     background-color:#FFFFDB;
     padding:33px 81px;
     border-radius: 15px;
@@ -245,7 +247,8 @@ header{
     right:-250px;
 }
 .registration form{
-    width:300px;
+    max-width:300px;
+    width:50vw;
     background-color:#FFFFDB;
     padding:33px 81px;
     border-radius: 15px;
@@ -392,12 +395,6 @@ footer{
     justify-content: center;
     padding:0 30px;
 }
-
-
-
-
-
-
 .submit-comment {
     color: white;
     background-color: black;
@@ -406,4 +403,126 @@ footer{
     cursor: pointer;
     display: inline-block;
     user-select: none;
+}
+.task-header{
+    border:1px solid gray;
+    padding:10px;
+    width:600px;
+    margin-bottom:7px;
+    border-radius: 5px;
+    border-left: 10px solid rgb(255, 219, 152);
+}
+@media(max-width:450px){
+    /* Header */
+    .icon-and-title{
+        font-size: 20px;
+        margin:0;
+        gap:0;
+    }
+    .icon-and-title img{
+        width:70px;
+    }
+    .ellipse{
+        width:350px;
+    }
+    .red{
+        width:450px;
+    }
+    .navigation{
+        margin:0 5px;
+    }
+    .navigation nav{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        gap:3px;
+        
+    }
+    .navigation nav a{
+        background-color: #ffd57a;
+        padding:5px;
+        border-radius:3px ;
+    }
+    /* Index */
+    .info{
+        font-size: 18px;
+    }
+    .about-block img{
+        display: none;
+    }
+    .courses{
+        height:170vh;
+        width:200vh;
+        left:-165vw;
+    }
+    .course{
+        font-size:17px;
+    }
+    .course img{
+        width:50vw;
+    }
+    .courses-list{
+        flex-direction: column;
+        gap:20px;
+    }
+    .advantages{
+        height:115vh;
+    }
+    .promo-cards{
+        flex-direction: column;
+    }
+    .promo-card{
+        width:80vw;
+        height:65vw;
+    }
+    .add{
+        display: none;
+    }
+    footer{
+        margin-bottom: 0;
+    }
+    /* Authorisation и Registration */
+    .registration{
+        height:80vh;
+    }
+    .registration img{
+        display: none;
+    }
+    .authorisation{
+        height:63vh;
+    }
+    .authorisation img{
+        display: none;
+    }
+    /* course-main */
+    .course-container{
+        height:90vh;
+    }
+    .course-grid{
+       grid-template-columns: 70vw;
+        margin:0 auto;
+    }
+    .course-progress{
+        width:30vw;
+    }
+    .task-header{
+        width:35vh;
+        margin-left:120px;
+    }
+    .task-lablel-list{
+        width:50vw;
+
+    }
+    .task-label{
+        width:60vw;
+        margin-left:150px;
+    }
+    /* course-task */
+    .task-grid{
+        grid-template-columns: 80vw;
+    }
+    .task-list{
+        display: none;
+    }
+
 }
